@@ -1,0 +1,195 @@
+HOST: http://radio24.ch
+
+--- Inoffizielle Dokumentation zur Radio 24-API ---
+---
+Willkommen zur inoffiziellen [Radio 24](http://radio24.ch/)-API Dokumentation
+---
+
+--
+Aktuelle Playlist
+Zeigt Informationen zur aktuellen Playlist an.
+
+Unter anderem:
+- Datum
+- Timecode
+- Title
+- Artist
+- Cover
+- ID
+--
+Shows the current playlist
+GET /radio/playlist_radio24.json
+< 200
+< Content-Type: application/json
+{ playlist=[
+{"date":"23.01.2014","timecode":"00:01:15","title":"LOVING YOU IS KILLING ME","artist":"ALOE BLACC","cover":"213422.jpg","id":"213422"},
+{"date":"23.01.2014","timecode":"00:04:29","title":"HERO","artist":"FAMILY OF THE YEAR","cover":"914748.jpg","id":"914748"},
+{"date":"23.01.2014","timecode":"00:07:37","title":"IT MUST HAVE BEEN LOVE","artist":"ROXETTE","cover":"223656.jpg","id":"223656"},
+{"date":"23.01.2014","timecode":"00:11:48","title":"SOMETHING I NEED","artist":"ONE REPUBLIC","cover":"1049150.jpg","id":"1049150"},
+{"date":"23.01.2014","timecode":"00:15:49","title":"CHASING CARS","artist":"SNOW PATROL","cover":"220906.jpg","id":"220906"},
+{"date":"23.01.2014","timecode":"00:19:52","title":"GIRL ON FIRE","artist":"ALICIA KEYS","cover":"212812.jpg","id":"212812"},
+{"date":"23.01.2014","timecode":"00:23:31","title":"I KISSED A GIRL","artist":"KATY PERRY","cover":"219582.jpg","id":"219582"},
+{"date":"23.01.2014","timecode":"00:26:50","title":"MARRY ME","artist":"JASON DERULO","cover":"1133860.jpg","id":"1133860"},
+{"date":"23.01.2014","timecode":"00:30:30","title":"HIGH HOPES","artist":"KODALINE","cover":"793658.jpg","id":"793658"},
+{"date":"23.01.2014","timecode":"00:34:15","title":"THERE MUST BE AN ANGEL","artist":"EURYTHMICS","cover":"221412.jpg","id":"221412"},
+{"date":"23.01.2014","timecode":"00:38:46","title":"PFLASTER","artist":"ICH & ICH","cover":"214558.jpg","id":"214558"},
+{"date":"23.01.2014","timecode":"00:42:06","title":"CHEATING","artist":"JOHN NEWMAN","cover":"962528.jpg","id":"962528"},
+{"date":"23.01.2014","timecode":"00:45:25","title":"IT'S MY LIFE","artist":"BON JOVI","cover":"219446.jpg","id":"219446"},
+{"date":"23.01.2014","timecode":"00:49:08","title":"LET'S GET STARTED","artist":"CAROLINE CHEVIN","cover":"947012.jpg","id":"947012"},
+{"date":"23.01.2014","timecode":"00:53:09","title":"THE BAD TOUCH","artist":"BLOODHOUND GANG","cover":"220282.jpg","id":"220282"},
+{"date":"23.01.2014","timecode":"00:57:13","title":"I SEE FIRE","artist":"ED SHEERAN","cover":"1024232.jpg","id":"1024232"},
+{"date":"23.01.2014","timecode":"01:02:08","title":"USE SOMEBODY","artist":"KINGS OF LEON","cover":"216324.jpg","id":"216324"},
+{"date":"23.01.2014","timecode":"01:05:48","title":"HEY BROTHER","artist":"AVICII","cover":"966304.jpg","id":"966304"},
+{"date":"23.01.2014","timecode":"01:09:58","title":"WHAT A FEELING (FLASHDANCE)","artist":"IRENE CARA","cover":"223496.jpg","id":"223496"},
+{"date":"23.01.2014","timecode":"01:13:34","title":"FOLLOW THE WIND","artist":"BASTIAN BAKER","cover":"985626.jpg","id":"985626"},
+{"date":"23.01.2014","timecode":"01:17:00","title":"APOLOGIZE","artist":"TIMBALAND FEAT. ONE REPUBLIC","cover":"215766.jpg","id":"215766"},
+{"date":"23.01.2014","timecode":"01:20:02","title":"TREASURE","artist":"BRUNO MARS","cover":"769966.jpg","id":"769966"},
+{"date":"23.01.2014","timecode":"01:22:44","title":"SWEET ABOUT ME","artist":"GABRIELLA CILMI","cover":"220910.jpg","id":"220910"},
+{"date":"23.01.2014","timecode":"01:26:20","title":"CHANGES","artist":"FAUL & WAD AD VS. PNAU","cover":"1110968.jpg","id":"1110968"},
+{"date":"23.01.2014","timecode":"01:29:38","title":"SKYFALL","artist":"ADELE","cover":"212818.jpg","id":"212818"},
+{"date":"23.01.2014","timecode":"01:33:33","title":"TO THE MOON AND BACK","artist":"SAVAGE GARDEN","cover":"221528.jpg","id":"221528"},
+{"date":"23.01.2014","timecode":"01:37:39","title":"YOU'RE NOT ALONE","artist":"MADS LANGER","cover":"213400.jpg","id":"213400"},
+{"date":"23.01.2014","timecode":"01:40:39","title":"HOW LONG WILL I LOVE YOU","artist":"ELLIE GOULDING","cover":"1030512.jpg","id":"1030512"},
+{"date":"23.01.2014","timecode":"01:43:05","title":"WHAT GOES AROUND","artist":"JUSTIN TIMBERLAKE","cover":"218104.jpg","id":"218104"},
+{"date":"23.01.2014","timecode":"01:46:52","title":"STORY OF MY LIFE","artist":"ONE DIRECTION","cover":"1030806.jpg","id":"1030806"},
+{"date":"23.01.2014","timecode":"01:50:31","title":"UNDER PRESSURE","artist":"QUEEN & DAVID BOWIE","cover":"221054.jpg","id":"221054"},
+{"date":"23.01.2014","timecode":"01:54:17","title":"CAN'T REMEMBER TO FORGET YOU","artist":"SHAKIRA FEAT. RIHANNA","cover":"1132934.jpg","id":"1132934"},
+{"date":"23.01.2014","timecode":"01:57:39","title":"I LOVE IT","artist":"ICONA POP","cover":"376010.jpg","id":"376010"},
+{"date":"23.01.2014","timecode":"02:00:21","title":"HUMAN","artist":"THE KILLERS","cover":"221020.jpg","id":"221020"},
+{"date":"23.01.2014","timecode":"02:04:18","title":"STOLEN DANCE","artist":"MILKY CHANCE","cover":"1028724.jpg","id":"1028724"},
+{"date":"23.01.2014","timecode":"02:07:36","title":"EARTH SONG","artist":"MICHAEL JACKSON","cover":"223896.jpg","id":"223896"},
+{"date":"23.01.2014","timecode":"02:12:27","title":"UNCONDITIONALLY","artist":"KATY PERRY","cover":"1028770.jpg","id":"1028770"},
+{"date":"23.01.2014","timecode":"02:16:13","title":"BUBBLY","artist":"COLBIE CAILLAT","cover":"217194.jpg","id":"217194"},
+{"date":"23.01.2014","timecode":"02:19:06","title":"LA LA LA","artist":"NAUGHTY BOY","cover":"816484.jpg","id":"816484"},
+{"date":"23.01.2014","timecode":"02:22:41","title":"THIS PRETTY FACE","artist":"AMY MACDONALD","cover":"214062.jpg","id":"214062"},
+{"date":"23.01.2014","timecode":"02:26:44","title":"LIGHT ME UP","artist":"BIRDY","cover":"1115978.jpg","id":"1115978"},
+{"date":"23.01.2014","timecode":"02:30:09","title":"DON'T YOU WORRY CHILD","artist":"SWEDISH HOUSE MAFFIA","cover":"349330.jpg","id":"349330"},
+{"date":"23.01.2014","timecode":"02:33:34","title":"JOHNNY B.","artist":"HOOTERS","cover":"216150.jpg","id":"216150"},
+{"date":"23.01.2014","timecode":"02:37:26","title":"VIVA LA VIDA","artist":"COLDPLAY","cover":"219920.jpg","id":"219920"},
+{"date":"23.01.2014","timecode":"02:41:08","title":"LOVE LIKE THIS","artist":"KODALINE","cover":"998594.jpg","id":"998594"},
+{"date":"23.01.2014","timecode":"02:44:38","title":"SOULMATE","artist":"NATASHA BEDINGFIELD","cover":"215644.jpg","id":"215644"},
+{"date":"23.01.2014","timecode":"02:48:02","title":"WRECKING BALL","artist":"MILEY CYRUS","cover":"891052.jpg","id":"891052"},
+{"date":"23.01.2014","timecode":"02:51:36","title":"LAURA NON C'È","artist":"NEK","cover":"222228.jpg","id":"222228"},
+{"date":"23.01.2014","timecode":"02:55:16","title":"DIGITAL KIDS","artist":"PEGASUS","cover":"1119054.jpg","id":"1119054"},
+{"date":"23.01.2014","timecode":"02:58:59","title":"MR. KNOW IT ALL","artist":"KELLY CLARKSON","cover":"213216.jpg","id":"213216"},
+{"date":"23.01.2014","timecode":"03:02:47","title":"JUBEL","artist":"KLINGANDE","cover":"987084.jpg","id":"987084"},
+{"date":"23.01.2014","timecode":"03:06:06","title":"DRIVE","artist":"CARS","cover":"223732.jpg","id":"223732"},
+{"date":"23.01.2014","timecode":"03:09:50","title":"FOLLOW THE RAIN","artist":"77 BOMBAY STREET","cover":"998170.jpg","id":"998170"},
+{"date":"23.01.2014","timecode":"03:13:20","title":"RELAX, TAKE IT EASY","artist":"MIKA","cover":"215702.jpg","id":"215702"},
+{"date":"23.01.2014","timecode":"03:17:01","title":"BURN IT DOWN","artist":"LINKIN PARK","cover":"212910.jpg","id":"212910"},
+{"date":"23.01.2014","timecode":"03:20:46","title":"A NIGHT LIKE THIS","artist":"CARO EMERALD","cover":"213374.jpg","id":"213374"},
+{"date":"23.01.2014","timecode":"03:24:49","title":"HUMAN","artist":"CHRISTINA PERRI","cover":"1100870.jpg","id":"1100870"},
+{"date":"23.01.2014","timecode":"03:28:26","title":"I FOLLOW RIVERS","artist":"TRIGGERFINGER","cover":"212846.jpg","id":"212846"},
+{"date":"23.01.2014","timecode":"03:32:00","title":"GENIE IN A BOTTLE","artist":"CHRISTINA AGUILERA","cover":"220762.jpg","id":"220762"},
+{"date":"23.01.2014","timecode":"03:35:38","title":"PARTY ROCK ANTHEM","artist":"LMFAO","cover":"213396.jpg","id":"213396"},
+{"date":"23.01.2014","timecode":"03:39:57","title":"SOMETHING I NEED","artist":"ONE REPUBLIC","cover":"1049150.jpg","id":"1049150"},
+{"date":"23.01.2014","timecode":"03:43:56","title":"CUPID'S CHOKEHOLD","artist":"GYM CLASS HEROES","cover":"219274.jpg","id":"219274"},
+{"date":"23.01.2014","timecode":"03:47:41","title":"HAPPY","artist":"PHARRELL WILLIAMS","cover":"1088834.jpg","id":"1088834"},
+{"date":"23.01.2014","timecode":"03:51:34","title":"WE DON'T NEED ANOTHER HERO","artist":"TINA TURNER","cover":"221662.jpg","id":"221662"},
+{"date":"23.01.2014","timecode":"03:55:33","title":"EUROPE","artist":"BABA SHRIMPS","cover":"1092798.jpg","id":"1092798"},
+{"date":"23.01.2014","timecode":"03:59:28","title":"WONDERFUL LIFE","artist":"HURTS","cover":"214024.jpg","id":"214024"},
+{"date":"23.01.2014","timecode":"04:02:53","title":"LIEDER","artist":"ADEL TAWIL","cover":"973900.jpg","id":"973900"},
+{"date":"23.01.2014","timecode":"04:06:39","title":"RHYTHM OF THE NIGHT","artist":"CORONA","cover":"212964.jpg","id":"212964"},
+{"date":"23.01.2014","timecode":"04:09:58","title":"CHEATING","artist":"JOHN NEWMAN","cover":"962528.jpg","id":"962528"},
+{"date":"23.01.2014","timecode":"04:13:15","title":"MISS CALIFORNIA","artist":"DANTE THOMAS","cover":"219442.jpg","id":"219442"},
+{"date":"23.01.2014","timecode":"04:16:25","title":"PEOPLE HELP THE PEOPLE","artist":"BIRDY","cover":"376014.jpg","id":"376014"},
+{"date":"23.01.2014","timecode":"04:20:30","title":"IT WILL RAIN","artist":"BRUNO MARS","cover":"213152.jpg","id":"213152"},
+{"date":"23.01.2014","timecode":"04:25:02","title":"DREAM A LITTLE DREAM","artist":"ROBBIE WILLIAMS","cover":"1094248.jpg","id":"1094248"},
+{"date":"23.01.2014","timecode":"04:28:05","title":"SKYLINE","artist":"PEGASUS","cover":"nocover.jpg","id":"349276"},
+{"date":"23.01.2014","timecode":"04:31:43","title":"NOTHING COMPARES 2 U","artist":"SINEAD O'CONNOR","cover":"222266.jpg","id":"222266"},
+{"date":"23.01.2014","timecode":"04:36:29","title":"NEW AGE","artist":"MARLON ROUDETTE","cover":"213230.jpg","id":"213230"},
+{"date":"23.01.2014","timecode":"04:39:26","title":"FOLLOW THE WIND","artist":"BASTIAN BAKER","cover":"985626.jpg","id":"985626"},
+{"date":"23.01.2014","timecode":"04:42:52","title":"FALLIN'","artist":"ALICIA KEYS","cover":"219444.jpg","id":"219444"},
+{"date":"23.01.2014","timecode":"04:46:04","title":"NEW YORK, RIO, ROSENHEIM","artist":"SPORTFREUNDE STILLER","cover":"1036782.jpg","id":"1036782"},
+{"date":"23.01.2014","timecode":"04:49:08","title":"ANOTHER DAY IN PARADISE","artist":"PHIL COLLINS","cover":"222296.jpg","id":"222296"},
+{"date":"23.01.2014","timecode":"04:53:41","title":"HARD OUT HERE","artist":"LILY ALLEN","cover":"1045568.jpg","id":"1045568"},
+{"date":"23.01.2014","timecode":"04:57:08","title":"CALL ME MAYBE","artist":"CARLY RAE JEPSEN","cover":"212918.jpg","id":"212918"},
+{"date":"23.01.2014","timecode":"05:04:42","title":"LIFESAVER","artist":"SUNRISE AVENUE","cover":"892868.jpg","id":"892868"},
+{"date":"23.01.2014","timecode":"05:04:56","title":"RUDE BOY","artist":"RIHANNA","cover":"214400.jpg","id":"214400"},
+{"date":"23.01.2014","timecode":"05:10:03","title":"LIFESAVER","artist":"SUNRISE AVENUE","cover":"892868.jpg","id":"892868"},
+{"date":"23.01.2014","timecode":"05:13:55","title":"PORCELAIN","artist":"MOBY","cover":"212948.jpg","id":"212948"},
+{"date":"23.01.2014","timecode":"05:18:11","title":"LAYLA (UNPLUGGED)","artist":"ERIC CLAPTON","cover":"214772.jpg","id":"214772"},
+{"date":"23.01.2014","timecode":"05:23:13","title":"LOVE ME AGAIN","artist":"JOHN NEWMAN","cover":"779376.jpg","id":"779376"},
+{"date":"23.01.2014","timecode":"05:26:42","title":"FRIENDS","artist":"AURA DIONE FEAT. ROCK MAFIA","cover":"213064.jpg","id":"213064"},
+{"date":"23.01.2014","timecode":"05:33:05","title":"HERO","artist":"FAMILY OF THE YEAR","cover":"914748.jpg","id":"914748"},
+{"date":"23.01.2014","timecode":"05:38:04","title":"LET IT BE","artist":"BEATLES","cover":"215520.jpg","id":"215520"},
+{"date":"23.01.2014","timecode":"05:42:03","title":"PAYPHONE","artist":"MAROON 5","cover":"212916.jpg","id":"212916"},
+{"date":"23.01.2014","timecode":"05:47:26","title":"DANCE WITH SOMEBODY (RADIO 24 EDIT)","artist":"MANDO DIAO","cover":"214770.jpg","id":"214770"},
+{"date":"23.01.2014","timecode":"05:52:59","title":"THE WORLD'S GREATEST *","artist":"R. KELLY","cover":"661198.jpg","id":"661198"},
+{"date":"23.01.2014","timecode":"05:56:19","title":"NO, NO, NO","artist":"MARC SWAY","cover":"349278.jpg","id":"349278"},
+{"date":"23.01.2014","timecode":"06:06:35","title":"HEY BROTHER","artist":"AVICII","cover":"966304.jpg","id":"966304"},
+{"date":"23.01.2014","timecode":"06:12:15","title":"RAIN ON YOUR PARADE","artist":"DUFFY","cover":"218634.jpg","id":"218634"},
+{"date":"23.01.2014","timecode":"06:18:17","title":"FIELDS OF GOLD","artist":"STING","cover":"221486.jpg","id":"221486"},
+{"date":"23.01.2014","timecode":"06:23:27","title":"M&F","artist":"DIE AERZTE","cover":"nocover.jpg","id":"349250"},
+{"date":"23.01.2014","timecode":"06:27:00","title":"WHERE IS THE LOVE (RADIO 24 EDIT)","artist":"BLACK EYED PEAS","cover":"219222.jpg","id":"219222"},
+{"date":"23.01.2014","timecode":"06:33:54","title":"GUARDIAN","artist":"ALANIS MORISSETTE","cover":"nocover.jpg","id":"349258"},
+{"date":"23.01.2014","timecode":"06:39:29","title":"DEMONS","artist":"IMAGINE DRAGONS","cover":"1045770.jpg","id":"1045770"},
+{"date":"23.01.2014","timecode":"06:44:32","title":"TITANIUM","artist":"DAVID GUETTA FEAT. SIA","cover":"213202.jpg","id":"213202"},
+{"date":"23.01.2014","timecode":"06:50:02","title":"WOULDN'T IT BE GOOD","artist":"NIK KERSHAW","cover":"222644.jpg","id":"222644"},
+{"date":"23.01.2014","timecode":"06:55:48","title":"SUPREME *","artist":"ROBBIE WILLIAMS","cover":"867180.jpg","id":"867180"},
+{"date":"23.01.2014","timecode":"07:06:06","title":"I WON'T LET YOU GO","artist":"JAMES MORRISON","cover":"213272.jpg","id":"213272"},
+{"date":"23.01.2014","timecode":"07:11:56","title":"LET'S GET STARTED","artist":"CAROLINE CHEVIN","cover":"947012.jpg","id":"947012"},
+{"date":"23.01.2014","timecode":"07:19:16","title":"MANIAC","artist":"MICHAEL SEMBELLO","cover":"223430.jpg","id":"223430"},
+{"date":"23.01.2014","timecode":"07:25:21","title":"TRY *","artist":"PINK","cover":"nocover.jpg","id":"401240"},
+{"date":"23.01.2014","timecode":"07:27:38","title":"CALL ON ME","artist":"ERIC PRYDZ","cover":"219806.jpg","id":"219806"},
+{"date":"23.01.2014","timecode":"07:33:59","title":"STOLEN DANCE","artist":"MILKY CHANCE","cover":"1028724.jpg","id":"1028724"},
+{"date":"23.01.2014","timecode":"07:37:15","title":"BLEEDING LOVE","artist":"LEONA LEWIS","cover":"215592.jpg","id":"215592"},
+{"date":"23.01.2014","timecode":"07:42:10","title":"ONE MORE NIGHT *","artist":"MAROON 5","cover":"nocover.jpg","id":"394330"},
+{"date":"23.01.2014","timecode":"07:46:19","title":"74-75","artist":"CONNELLS","cover":"222242.jpg","id":"222242"},
+{"date":"23.01.2014","timecode":"07:50:34","title":"CHEF","artist":"BLIGG","cover":"213960.jpg","id":"213960"},
+{"date":"23.01.2014","timecode":"07:53:56","title":"BEAUTIFUL DAY","artist":"U2","cover":"219966.jpg","id":"219966"},
+{"date":"23.01.2014","timecode":"08:07:04","title":"JUBEL","artist":"KLINGANDE","cover":"987084.jpg","id":"987084"},
+{"date":"23.01.2014","timecode":"08:11:50","title":"VIDEO GAMES","artist":"LANA DEL REY","cover":"213126.jpg","id":"213126"},
+{"date":"23.01.2014","timecode":"08:18:26","title":"I LOVE YOU ALWAYS FOREVER","artist":"DONNA LEWIS","cover":"222428.jpg","id":"222428"},
+{"date":"23.01.2014","timecode":"08:23:39","title":"LET HER GO","artist":"PASSENGER","cover":"358130.jpg","id":"358130"},
+{"date":"23.01.2014","timecode":"08:27:43","title":"DON'T CHA *","artist":"PUSSYCAT DOLLS","cover":"nocover.jpg","id":"643612"},
+{"date":"23.01.2014","timecode":"08:33:28","title":"I NEED YOUR LOVE","artist":"CALVIN HARRIS FEAT. ELLIE GOUL","cover":"692284.jpg","id":"692284"},
+{"date":"23.01.2014","timecode":"08:39:31","title":"STORY OF MY LIFE","artist":"ONE DIRECTION","cover":"1030806.jpg","id":"1030806"},
+{"date":"23.01.2014","timecode":"08:43:07","title":"COUNT ON ME (RADIO 24 EDIT)","artist":"BRUNO MARS","cover":"nocover.jpg","id":"349404"},
+{"date":"23.01.2014","timecode":"08:48:07","title":"HEAL THE WORLD","artist":"MICHAEL JACKSON","cover":"348780.jpg","id":"348780"},
+{"date":"23.01.2014","timecode":"08:53:30","title":"HEY WORLD *","artist":"CAROLINE CHEVIN","cover":"364492.jpg","id":"364492"},
+{"date":"23.01.2014","timecode":"08:55:49","title":"FOR YOU","artist":"THE DISCO BOYS FEAT. MANFRED M","cover":"212954.jpg","id":"212954"},
+{"date":"23.01.2014","timecode":"09:04:39","title":"CASTLE OF GLASS","artist":"LINKIN PARK","cover":"397652.jpg","id":"397652"},
+{"date":"23.01.2014","timecode":"09:10:04","title":"HELP!","artist":"BEATLES","cover":"nocover.jpg","id":"218374"},
+{"date":"23.01.2014","timecode":"09:12:23","title":"MS. JACKSON","artist":"OUTKAST","cover":"223188.jpg","id":"223188"},
+{"date":"23.01.2014","timecode":"09:16:41","title":"LIEDER","artist":"ADEL TAWIL","cover":"973900.jpg","id":"973900"},
+{"date":"23.01.2014","timecode":"09:23:09","title":"HOW BIZARRE","artist":"OMC","cover":"222894.jpg","id":"222894"},
+{"date":"23.01.2014","timecode":"09:26:56","title":"HELELE","artist":"VELILE & SAFRI DUO","cover":"214088.jpg","id":"214088"},
+{"date":"23.01.2014","timecode":"09:32:19","title":"JUST HOLD ME","artist":"MARIA MENA","cover":"214862.jpg","id":"214862"},
+{"date":"23.01.2014","timecode":"09:36:39","title":"GIVE IT TO ME RIGHT *","artist":"MELANIE FIONA","cover":"974924.jpg","id":"974924"},
+{"date":"23.01.2014","timecode":"09:39:12","title":"ST. ELMO'S FIRE","artist":"JOHN PARR","cover":"221542.jpg","id":"221542"},
+{"date":"23.01.2014","timecode":"09:43:06","title":"HOW LONG WILL I LOVE YOU","artist":"ELLIE GOULDING","cover":"1030512.jpg","id":"1030512"},
+{"date":"23.01.2014","timecode":"09:46:21","title":"CHASING THE SUN","artist":"THE WANTED","cover":"nocover.jpg","id":"349288"},
+{"date":"23.01.2014","timecode":"09:51:32","title":"ORDINARY WORLD *","artist":"DURAN DURAN","cover":"nocover.jpg","id":"348952"},
+{"date":"23.01.2014","timecode":"09:54:28","title":"WRECKING BALL","artist":"MILEY CYRUS","cover":"891052.jpg","id":"891052"},
+{"date":"23.01.2014","timecode":"10:03:40","title":"HERO","artist":"FAMILY OF THE YEAR","cover":"914748.jpg","id":"914748"},
+{"date":"23.01.2014","timecode":"10:06:45","title":"I LIKE","artist":"KERI HILSON","cover":"214480.jpg","id":"214480"},
+{"date":"23.01.2014","timecode":"10:12:46","title":"MMM MMM MMM MMM","artist":"CRASH TEST DUMMIES","cover":"221514.jpg","id":"221514"},
+{"date":"23.01.2014","timecode":"10:16:28","title":"I COULDN'T CARE LESS","artist":"LESLIE CLIO","cover":"349366.jpg","id":"349366"},
+{"date":"23.01.2014","timecode":"10:20:12","title":"NEVER BE THE SAME AGAIN","artist":"MELANIE C","cover":"219304.jpg","id":"219304"},
+{"date":"23.01.2014","timecode":"10:24:26","title":"I WISH IT WOULD RAIN DOWN","artist":"PHIL COLLINS","cover":"223820.jpg","id":"223820"},
+{"date":"23.01.2014","timecode":"10:30:05","title":"SKINNY GENES","artist":"ELIZA DOOLITTLE","cover":"214016.jpg","id":"214016"},
+{"date":"23.01.2014","timecode":"10:33:09","title":"LA LA LA","artist":"NAUGHTY BOY","cover":"816484.jpg","id":"816484"},
+{"date":"23.01.2014","timecode":"10:36:01","title":"UNCONDITIONALLY","artist":"KATY PERRY","cover":"1028770.jpg","id":"1028770"},
+{"date":"23.01.2014","timecode":"10:40:59","title":"I'M EASY","artist":"FAITH NO MORE","cover":"223158.jpg","id":"223158"},
+{"date":"23.01.2014","timecode":"10:43:58","title":"THE EDGE OF GLORY","artist":"LADY GAGA","cover":"213336.jpg","id":"213336"},
+{"date":"23.01.2014","timecode":"10:49:46","title":"HAPPY","artist":"PHARRELL WILLIAMS","cover":"1088834.jpg","id":"1088834"},
+{"date":"23.01.2014","timecode":"10:54:01","title":"SMOOTH CRIMINAL","artist":"MICHAEL JACKSON","cover":"213350.jpg","id":"213350"},
+{"date":"23.01.2014","timecode":"10:57:57","title":"TRY","artist":"NELLY FURTADO","cover":"218014.jpg","id":"218014"}
+] }
+
+
+-- 
+Aktuelle On-Air-Informationen 
+Zeigt Informationen zum aktuellen Radiogeschehen an.
+
+Darunter:
+- Informationen zur Radiostation und deren aktuellen Zeit 
+- Informationen zum aktuellem Radioprogramm und dessen Host
+- Informationen zum darauf folgendem Programm
+--
+This resource allows you to submit payment information to process your *shopping cart* items
+GET /radio/onair.json
+{ "cc": "12345678900", "cvc": "123", "expiry": "0112" }
+< 200
+{ "receipt": "/payment/receipt/1" }
